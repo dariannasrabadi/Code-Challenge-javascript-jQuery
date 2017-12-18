@@ -1,3 +1,7 @@
 .generated { /* Instructions said only those generated, so if a div was created on the console or html it is not included */
   background-color: red;
 }
+
+.yellow {
+  background-color: yellow;
+}
