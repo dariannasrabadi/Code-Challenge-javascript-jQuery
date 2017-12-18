@@ -13,6 +13,8 @@ function divCreator() {//start of divCreator
   i++; // adding count
   var $div = $('<div></div>');
   $div.append('<p>' + i + '</p>');
+  $div.append('<button class="swapBtn">Swap</button>');
+  $div.append('<button class="deleteBtn">Delete</button>');
 
 
   $('body').append($div);
