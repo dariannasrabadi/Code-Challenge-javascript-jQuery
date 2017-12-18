@@ -11,7 +11,7 @@ $('#generator').on('click', divCreator);
 function divCreator() {//start of divCreator
   console.log('I was clicked');
   i++; // adding count
-  var $div = $('<div></div>');
+  var $div = $('<div class="generated"></div>'); // separating divs that were created via the button.
   $div.append('<p>' + i + '</p>');
   $div.append('<button class="swapBtn">Swap</button>');
   $div.append('<button class="deleteBtn">Delete</button>');
