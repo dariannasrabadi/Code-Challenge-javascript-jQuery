@@ -5,7 +5,7 @@ var i = 0; // button click count
 function onReady() { //Start onReady Function
 $('#generator').on('click', divCreator);
 $('body').on('click', '.swapBtn', colorSwap);
-
+$('body').on('click', '.deleteBtn', deleteMe);
 } // END: onReady
 
 function divCreator() {//start of divCreator
@@ -26,3 +26,8 @@ function colorSwap() {//start of colorSwap
 $(this).parent().toggleClass('yellow');
 console.log('In Swap Button');
 } // END: colorSwap
+
+function deleteMe() {//Start of deleteMe
+$(this).parent().remove();
+console.log('In Delete Button');
+} // END: deleteMe
